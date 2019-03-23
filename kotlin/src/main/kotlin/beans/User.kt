@@ -1,3 +1,3 @@
 package beans
 
-data class User(val name: String, val age: Int)
+data class User(var name: String, var age: Int)

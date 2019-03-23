@@ -7,5 +7,8 @@ fun main(args: Array<String>) {
 
     val users = listOf(User("Jacob", 31), User("Jane", 29))
 
-    users.forEach { println("Printing user's info: $it") }
+    println(users
+            .map { it.age }
+            .reduce { acc, age -> acc + age })
+
 }
